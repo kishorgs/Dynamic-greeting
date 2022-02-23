@@ -3,7 +3,7 @@
 
 **This is done using date method in javascript**
 
-**The screenshots of the above page is provided below 
+**The screenshots of the above page is provided below**
 
 
 <img src="img/greet1.png" width=600 height=450>
