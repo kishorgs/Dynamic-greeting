@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<style type="text/css">
+	
+	*{
+		margin:0;
+		padding:0;
+		box-sizing: border-box;
+	}
+
+	body{
+		background:navy;
+	}
+
+	#greet{
+		position: absolute;
+		top:50%;
+		left:50%;
+		transform: translate(-50%,-50%);
+		color:red;
+		font-size: 24px;
+	}
+
+</style>
+
+<head>
+	<title>Dynamic greeting</title>
+</head>
+
+<body>
+
+	<div>
+		<h1 id="greet"></h1>
+	</div>
+
+</body>
+
+<script type="text/javascript">
+
+	var d=new Date();
+	var h=d.getHours();
+	var span = document.getElementById('greet');
+
+
+	if(h<12)
+		span.innerHTML = "good morning";
+	else if(h>=12 && h<16)
+		span.innerHTML = "good night";
+	else if(h>=16 && h<20)
+		span.innerHTML = "good evening";
+	else if(h>=20)
+		span.innerHTML = "good night";
+	else 
+		span.innerHTML = "not defined time";
+
+
+</script>
+
+</html>
+
